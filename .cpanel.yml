@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/tdrhoytp/andrewnaichuk.com
+    - /bin/cp -R * $DEPLOYPATH
+    

@@ -6,17 +6,13 @@
 	--accent: #07F28F;
 }
 
-* {
+html {
 	margin: 0;
 	font-family: 'Assistant', sans-serif;
 	font-weight: 300;
-	font-size: 18px;
 	color: var(--main-text);
 	line-height: 140%;
-}
-
-html {
-	font-size: 18px;
+	font-size: 62.5%;
 	background: var(--main-bg);
 	scroll-behavior: smooth;
 }
@@ -26,32 +22,33 @@ h1, h2, h3, h4, h5, h6 {
 	color: var(--heading-text);
 	font-weight: 600;
 	line-height: 130%;
-	margin-top: 0.7rem;
-	margin-bottom: 0.7rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 	transition: 0.4s;
 }
 
 section {
-	margin: 5rem auto;
-	max-width: 50rem;
+	margin: 8rem auto;
+	max-width: 90rem;
 }
 
 a {
 	font-family: 'Assistant', sans-serif;
 	text-decoration: none;
-	font-size: 20px;
-	padding-bottom: 0.2rem;
+	font-size: 2rem;
+	color: var(--heading-text);
+	padding-bottom: 0.7rem;
 	border-bottom: 2px solid rgba(0, 0, 0, 0.0);
 	font-weight: 600;
 	transition: 0.4s;
 }
 
 .links-block a {
-	margin: 0 1rem;
+	margin: 0 2rem;
 }
 
 .links-block a:first-child {
-	margin: 0 1rem 0 0;
+	margin: 0 2rem 0 0;
 }
 
 a:hover {
@@ -60,37 +57,37 @@ a:hover {
 }
 
 h1 {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	font-size: 65px;
+	font-size: 7rem;
 }
 
 h2 {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	font-size: 40px;
+
+	font-size: 4rem;
 }
 
 h3 {
-	font-size: 32px;
+	font-size: 3.2rem;
 }
 
 h4 {
-	font-size: 22px;
+	font-size: 2.2rem;
 }
 
 h5 {
-	font-size: 18px;
+	font-size: 1.8rem;
 }
 
 h6 {
-	margin: 0.5rem 0;
-	font-size: 14px;
+	margin: 1rem 0;
+	font-size: 1.4rem;
 }
 
 p {
-	font-size: 18px;
-	font-weight: 400;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	font-size: 1.8rem;
+	font-weight: 300;
+	line-height: 150%;
 }
 
 span {
@@ -100,7 +97,7 @@ span {
 .links-block {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 3rem 0;
+	margin: 6rem 0;
 }
 
 .feature {
@@ -124,7 +121,7 @@ span {
 }
 
 .case-container img {
-	object-fit: cover;
+	object-fit: contain;
 	margin: 1rem 0;
 	width: 100%;
 	height: 47vh;
@@ -133,7 +130,6 @@ span {
 }
 
 .case {
-	/*margin-bottom: 2rem;*/
 	display: flex;
 	align-items: flex-start;
 }
@@ -143,7 +139,6 @@ span {
 }
 
 .case-container:hover img {
-/*	height: 50vh;*/
 	border-bottom: 4px solid var(--accent);
 }
 
@@ -156,8 +151,9 @@ span {
 	margin-right: 1rem;
 }
 
-.case-meta h3 {
+.case-meta h3, h5, p {
 	margin-top: 0;
+	margin-bottom: 1rem;
 
 }
 
@@ -243,9 +239,6 @@ div#process {
 }
 
 @media (min-width: 200px) and (max-width: 950px) {
-	* {
-		margin: 0;
-	}
 
 	h1 {
 		margin-top: 1rem;
